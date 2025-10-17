@@ -18,19 +18,18 @@
 
 ## 폴더 구조 (Folder Structure)
 
-각 프로젝트는 독립적인 폴더로 관리됩니다:
+각 프로젝트는 루트 디렉토리에 독립적인 폴더로 관리됩니다:
 
 ```
 SandBox_Playground/
-├── python/          # Python 프로젝트들
-├── javascript/      # JavaScript/Node.js 프로젝트들
-├── golang/          # Go 프로젝트들
-└── others/          # 기타 언어 프로젝트들
+├── project-name-1/     # 프로젝트 1
+├── project-name-2/     # 프로젝트 2
+└── project-name-3/     # 프로젝트 3
 ```
 
 ## 사용 방법 (How to Use)
 
-1. **새 프로젝트 시작**: 해당 언어 폴더에 새 디렉토리를 생성
+1. **새 프로젝트 시작**: 루트 디렉토리에 새 프로젝트 폴더를 생성
 2. **코드 작성**: 자유롭게 코드를 작성하고 실험
 3. **테스트**: 필요한 테스트를 작성하고 실행
 4. **정리**: 불필요한 프로젝트는 삭제
@@ -40,9 +39,8 @@ SandBox_Playground/
 
 ### Python 프로젝트
 ```bash
-cd python
-mkdir my-experiment
-cd my-experiment
+mkdir my-python-experiment
+cd my-python-experiment
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
@@ -50,19 +48,17 @@ pip install -r requirements.txt
 
 ### JavaScript 프로젝트
 ```bash
-cd javascript
-mkdir my-app
-cd my-app
+mkdir my-js-app
+cd my-js-app
 npm init -y
 npm install
 ```
 
 ### Go 프로젝트
 ```bash
-cd golang
-mkdir my-service
-cd my-service
-go mod init github.com/xheize/my-service
+mkdir my-go-service
+cd my-go-service
+go mod init github.com/xheize/my-go-service
 ```
 
 ## 규칙 (Rules)
