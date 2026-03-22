@@ -7,3 +7,10 @@
 curl -sfL https://get.k3s.io | sh -
 # 설치 확인
 sudo kubectl get nodes
+
+
+
+# 워커 노드 추가
+curl -sfL https://get.k3s.io | K3S_URL=https://<MASTER_NODE_IP>:6443 K3S_TOKEN=<NODE_TOKEN> K3S_NODE_NAME=<NODE_NAME> sh -
+# 설치 확인
+sudo kubectl get nodes
